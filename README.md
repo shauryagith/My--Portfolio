@@ -47,7 +47,7 @@ This portfolio website is designed to highlight:
 | **JavaScript** | Interactivity     |
 | **Git & GitHub** | Version Control & Deployment |
 
-> *(Update this if you're using React, Tailwind, etc.)*
+> *( using React, Tailwind, etc.)*
 
 ---
 
