@@ -6,7 +6,7 @@ A responsive personal portfolio website showcasing projects, skills, and contact
 Welcome to **My Portfolio** — a personal website to showcase my skills, projects, and experiences as a developer. This website serves as a digital resume and project gallery to share with potential employers, collaborators, and anyone interested in my work.
 
 ## 🚀 Live Demo
-🔗 [View Portfolio](https://your-username.github.io/My--Portfolio)
+🔗 [View Portfolio](https://my-portfolio-eight-wine-odt4cflsc2.vercel.app/)
 
 ---
 
