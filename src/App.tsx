@@ -16,6 +16,7 @@ import {
   ChevronRight,
   User,
   Briefcase,
+  Cloud,
   Zap,
   Cpu,
   Monitor,
@@ -45,7 +46,19 @@ function App() {
     { name: 'Node.js', level: 80, icon: Server, color: 'from-green-400 to-emerald-500' },
     { name: 'MongoDB', level: 75, icon: Database, color: 'from-green-500 to-teal-500' },
     { name: 'Express.js', level: 80, icon: Terminal, color: 'from-gray-400 to-gray-600' },
-    { name: 'Cyber Security', level: 70, icon: Shield, color: 'from-red-400 to-pink-500' }
+    { name: 'Cyber Security', level: 70, icon: Shield, color: 'from-red-400 to-pink-500' },
+    { name: 'Python', level: 65, icon: Code, color: 'from-yellow-500 to-green-500' },
+    { name: 'HTML/CSS', level: 90, icon: Code, color: 'from-pink-400 to-purple-500' },
+    { name: 'Git & GitHub', level: 85, icon: Code, color: 'from-gray-500 to-gray-700' },
+    { name: 'RESTful APIs', level: 80, icon: Globe, color: 'from-blue-500 to-indigo-500' },
+    { name: 'Docker', level: 60, icon: Server, color: 'from-blue-400 to-blue-600' },
+    { name: 'Linux', level: 70, icon: Terminal, color: 'from-green-400 to-green-600' },
+    { name: 'AWS', level: 65, icon: Cloud, color: 'from-orange-400 to-yellow-500' },
+    { name: 'Agile Methodologies', level: 75, icon: Cpu, color: 'from-purple-400 to-pink-500' },
+    { name: 'Kubernets', level: 90, icon: Code, color: 'from-yellow-400 to-orange-500' },
+    { name: 'Generative AI ', level: 65, icon: Code, color: 'from-yellow-400 to-orange-500' },
+    { name: 'Postman API Testing ', level: 85, icon: Code, color: 'from-yellow-400 to-orange-500' }
+
   ];
 
   const projects = [
@@ -236,16 +249,23 @@ function App() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
-            <button className="group bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-cyan-600 hover:via-blue-600 hover:to-purple-600 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 flex items-center justify-center gap-3">
-              <Briefcase size={20} className="group-hover:animate-bounce" />
-              View My Work
-              <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="group border-2 border-purple-400 hover:border-cyan-400 hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-cyan-500/20 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 flex items-center justify-center gap-3">
-              <Mail size={20} className="group-hover:animate-bounce" />
+            <a href="/resume.pdf" download>
+               <button className="group bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-cyan-600 hover:via-blue-600 hover:to-purple-600 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 flex items-center justify-center gap-3">
+               <Briefcase size={20} className="group-hover:animate-bounce" />
+               Download Resume
+                <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
+               </button>
+             </a>
+ 
+
+            <a href="#contact">
+              <button className="group border-2 border-purple-400 hover:border-cyan-400 hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-cyan-500/20 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 flex items-center justify-center gap-3">
+             <Mail size={20} className="group-hover:animate-bounce" />
               Get In Touch
               <Zap size={16} className="group-hover:rotate-12 transition-transform" />
-            </button>
+              </button>
+            </a>
+
           </div>
 
           {/* Animated Icons - Responsive */}
@@ -437,7 +457,7 @@ function App() {
             <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8">
               {[
                 { icon: Github, color: 'hover:text-purple-400', bg: 'hover:bg-purple-500/20', link: 'https://github.com/shauryagith'  },
-                { icon: Linkedin, color: 'hover:text-blue-400', bg: 'hover:bg-blue-500/20', link: 'https://www.linkedin.com/in/shreyash-shourya-srivastav-328057228/' },
+                { icon: Linkedin, color: 'hover:text-blue-400', bg: 'hover:bg-blue-500/20', link: 'https://www.linkedin.com/in/shreyash-shaurya-srivastav-328057228/' },
                 { icon: Twitter, color: 'hover:text-cyan-400', bg: 'hover:bg-cyan-500/20', link: 'https://x.com/sshreyash153' }
               ].map((social, index) => (
                 <a 
@@ -470,4 +490,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
